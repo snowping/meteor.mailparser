@@ -1,10 +1,10 @@
 Meteor wrapper for MailParser
 ==========
 
-**Installation**
+#Installation
       meteor add snowping:mailparser
 
-**Usage within Meteor**
+#Usage within Meteor
       var mailparser = new MailParser();
       mailparser.write(email);
       //etc.. (see below)
