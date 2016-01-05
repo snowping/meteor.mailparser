@@ -1,10 +1,12 @@
 Meteor wrapper for MailParser
 ==========
 
-#Installation
+## Installation
+
       meteor add snowping:mailparser
 
-#Usage within Meteor
+## Usage within Meteor
+
       var mailparser = new MailParser();
       mailparser.write(email);
       mailparser.end();
@@ -13,6 +15,8 @@ Meteor wrapper for MailParser
       }));
 
       //etc.. (see below)
+
+## Official documentation
 
 [![Build Status](https://api.travis-ci.org/andris9/mailparser.svg)](http://travis-ci.org/andris9/mailparser)
 [![NPM version](https://badge.fury.io/js/mailparser.svg)](http://badge.fury.io/js/mailparser)
