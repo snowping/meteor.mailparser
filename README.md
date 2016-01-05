@@ -8,7 +8,7 @@ Meteor wrapper for MailParser
       var mailparser = new MailParser();
       mailparser.write(email);
       mailparser.end();
-      mailparser.on("end", Meteor.bindEnvironment(function (mail_object) {  // setup an event listener when the parsing embedded emails finishes
+      mailparser.on("end", Meteor.bindEnvironment(function (mail_object) {  //Wrap using Meteor.bindEnvironment to start callback within new fiber
         console.log(mail_object); //print parsed email properties
       }));
 
