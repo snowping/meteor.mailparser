@@ -7,6 +7,11 @@ Meteor wrapper for MailParser
 #Usage within Meteor
       var mailparser = new MailParser();
       mailparser.write(email);
+      mailparser.end();
+      mailparser.on("end", Meteor.bindEnvironment(function (mail_object) {  // setup an event listener when the parsing embedded emails finishes
+        console.log(mail_object); //print parsed email properties
+      }));
+
       //etc.. (see below)
 
 [![Build Status](https://api.travis-ci.org/andris9/mailparser.svg)](http://travis-ci.org/andris9/mailparser)
